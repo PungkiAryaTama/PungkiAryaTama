@@ -62,6 +62,7 @@ menu,th{
 .table1, th, td {
     padding: 18px 35px;
     text-align: center;
+
 }
 .bg{
   background: red;
