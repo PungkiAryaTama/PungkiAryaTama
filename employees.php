@@ -127,15 +127,16 @@ function delete_employee($id){
   $query = "DELETE FROM `tb_employee` WHERE id=".$id;
   if (mysqli_query($connection, $query)) {
     $response=array(
-      'status' => 1,
-      'status_message' => 'Employee Deleted Successfully.'
-            );
-    $response=array(
       'status' => 0,
       'status_message' => 'Employee Deletion Failed.'
+            );
+    $response=array(
+      'status' => 1,
+      'status_message' => 'Employee Deleted Successfully.'
     );
   }
-
+header('Content-Type: application/json');
+echo json_encode($response);
 }
 
 
