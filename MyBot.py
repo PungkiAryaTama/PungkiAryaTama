@@ -24,13 +24,13 @@ class Mybot:
         photo = open('img/me.jpg', 'rb')
         myBot.send_photo(message.from_user.id, photo)
         text = MyToken.Reply + "\n-- BY : @PungkiArya - XI RPL 2 -- " + "\n" \
-        + "\n Pilih /help Untuk Mendapatkan Bantuan Tentang Apa Saja Yang Bisa Kamu Lakukan" + "\n" \
-                                                                        "Today's Date " + str(time)
+        + "\n🏳Pilih /help Untuk Mendapatkan Bantuan Tentang Apa Saja Yang Bisa Kamu Lakukan" + "\n" \
+                                                                        "🕕 Today's Date " + str(time)
         myBot.reply_to(message, text)
 
     @myBot.message_handler(commands=['help'])
     def bantuan(message):
-        help = MyToken.Help + "\n-- Pilih /datasiswa -- " + "\n" \
+        help = MyToken.Help + "\n 🏳 Pilih /datasiswa : " + \
                                                                     "Jika Kamu Ingin Melihat Datasiswa Kelas XI Pada Jurusan Rekayasa Perangkat Lunak"
         myBot.reply_to(message, help)
 
