@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css">
+    hr {
+        height: 10px;
+        border: 0;
+        box-shadow: 0 20px 20px -10px #8c8c8c inset;
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 70px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 10px;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .fa-youtube {
+        background: whitesmoke;
+        color: red;
+    }
+
+    .fa-instagram {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .fa-whatsapp {
+        background: whitesmoke;
+        color: green;
+    }
+
+    .card {
+        background-image: url("https://image.freepik.com/free-vector/low-poly-abstract-white-golden-lines-background_1017-26507.jpg");
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" style="margin-right: 30px; margin-left: 630px;">Video Player
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#audio" style="margin-right: 30px;">Audio Player</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1 style="text-align: center;">Music Section</h1>
+    <hr>
+    <div class="row row-cols-1 row-cols-md-2">
+        <div class="col mb-4">
+            <div class="card">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/87by1DjfxLw"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Metallica - Enter Sandman (Live in Mexico City) [Orgullo, Pasión, y
+                        Gloria]
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col mb-4">
+            <div class="card">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FcoUvu0mGog"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Metallica: Fade to Black (Lincoln, NE - September 6, 2018)</h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/d_RKO5ozLVo"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Kiss - Forever</h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9MNdOCQYOL8"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Metallica: Whiskey in the Jar (Slane Castle - Meath, Ireland - June 8,
+                        2019)
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+        <div data-aos="fade-down-left">
+            <div class="col mb-4">
+                <div class="card">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wpxWoikZZww"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Iron Maiden - Wasted Years (Live from The Book Of Souls World Tour)
+                        </h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-down-left">
+            <div class="col mb-4">
+                <div class="card">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1kLMU5xi-PU"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Metallica: ...And Justice for All (Montreal, QC, Canada - August 9,
+                            2014)
+                        </h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-aos="zoom-out-right">
+        <hr>
+        <h1 style="text-align: center;">Movie Section</h1>
+        <hr>
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-4">
+                <div class="card">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video src="Godzilla King Of The Monster.mp4" controls></video>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Godzilla : King Of The Monster
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video src="Toy Story 4.mp4" controls></video>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Toy Story 4
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <h1 style="text-align: center;" id="audio">Audio Player</h1>
+    <hr>
+    <div class="card-group">
+        <div class="card">
+            <div data-aos="fade-up-right">
+                <audio src="November Rain.mp3" autoplay="false" controls></audio>
+                <div class="card-body">
+                    <h5 class="card-title">Guns N Roses : November Rain</h5>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div data-aos="fade-up-left">
+                <audio src="Always.mp3" autoplay="false" controls></audio>
+                <div class="card-body">
+                    <h5 class="card-title">Bon Jovi : Always</h5>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div data-aos="fade-up-right">
+                <audio src="The Talisman.mp3" autoplay="false" controls></audio>
+                <div class="card-body">
+                    <h5 class="card-title">Iron Maiden : The Talisman</h5>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div data-aos="fade-up-left">
+                <audio src="Still Loving You.mp3" autoplay="false" controls></audio>
+                <div class="card-body">
+                    <h5 class="card-title">Scorpion : Still Loving You</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div data-aos="fade-up-right">
+                <audio src="Metallica - Hero Of The Day (Video).mp3" autoplay="false" controls></audio>
+                <div class="card-body">
+                    <h5 class="card-title">Metallica : Hero Of The Day</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="card-group">
+        <div class="card">
+            <div data-aos="fade-up-left">
+                <audio src="Skid Row - 18 And Life (Official Music Video).mp3" autoplay="false" controls></audio>
+                <div class="card-body">
+                    <h5 class="card-title">Skid Row : 18 And Life</h5>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div data-aos="fade-up-right">
+                <audio src="Bon Jovi - It's My Life (Official Music Video).mp3" autoplay="false" controls></audio>
+                <div class="card-body">
+                    <h5 class="card-title">Bon Jovi : It's My Life</h5>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div data-aos="fade-up-left">
+                <audio src="Civil War.mp3" autoplay="false" controls></audio>
+                <div class="card-body">
+                    <h5 class="card-title">Guns N Roses : Civil War</h5>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div data-aos="fade-up-right">
+                <audio src="Guns N' Roses - Knockin' On Heaven's Door live hq.mp3" autoplay="false" controls></audio>
+                <div class="card-body">
+                    <h5 class="card-title">Guns N Roses : Knockin' On Heaven's Door</h5>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div data-aos="fade-up-left">
+                <audio src="Washington Is Next!.mp3" autoplay="false" controls></audio>
+                <div class="card-body">
+                    <h5 class="card-title">Megadeth : Washington Is Next!</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer"
+        style=" background: linear-gradient(to right, #0f2027, #203a43, #2c5364); margin-bottom: 0px;height: 150px;">
+        <div data-aos="zoom-in-up">
+            <h1 style="text-align: center;color: whitesmoke;">Follow Me On</h1>
+            <center><a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+            </center>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
